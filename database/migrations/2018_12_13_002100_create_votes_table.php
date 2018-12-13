@@ -22,7 +22,7 @@ class CreateVotesTable extends Migration
             $table->unsignedInteger('post_id');
             $table->foreign('post_id')->references('id')->on('posts');
 
-            $table->tinyInt('vote')->nullable();
+            $table->tinyInteger('vote')->nullable();
 
             $table->timestamps();
         });
