@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
 
+            $table->text('post_title');
             $table->text('post_body');
             $table->string('video_url')->nullable();
 

@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "HomeController@index");
+Route::get('/logout', "Auth\LoginController@logout");
+Route::resource('recipes', 'PostController');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

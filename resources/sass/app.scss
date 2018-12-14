@@ -8,7 +8,56 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.btn-simple {
+	border: 1px solid black;
+	color: black;
+
+	&:hover {
+		color: black;
+		border-color: #444;
+	}
+}
+
+.navbar-theme {
+	margin-bottom: 50px;
+
+	#logo {
+		img {
+			width: 200px;
+		}
+	}
+
+	.navbar-nav > li > a:not(.btn) {
+		color: #333;
+		margin: 0px 5px;
+		border-bottom: 3px solid #222;
+	}
+}
+
+.heading-1 {
+	display: inline-block;
+	border-bottom: 5px solid #222;
+	padding-bottom: 5px;
+	margin: 20px 0;
+
+	span {
+		float:right;
+		display: block;
+	}
+}
+
+.recipe {
+	margin-top: 15px;
+	border-top: 5px solid #ccc;
+	padding-top: 20px;
+}
+
+body {
+	background: url('/img/folk-pattern.png');
+}
+
+.content {
+	background: #fff;
+	padding: 30px;
+	border: 5px solid #ccc;
 }
