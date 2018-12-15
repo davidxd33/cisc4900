@@ -14,11 +14,23 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    @include('layouts.navbar')
+    <header>
+        @include('layouts.navbar')
+        <div class="header-content">    
+            <a href="#"><img src="{{ asset('img/logo.png') }}" alt=""></a>
+
+            <p class="info">Enjoy food on a student's budget.</p>
+        </div>
+    </header>
 
     <main>
         @yield('content')
     </main>
+
+    <footer>
+        <p>(C) 2018 All Rights Reserved  -- This is a website made by David Ponce for Brooklyn College's CISC 4900 course.</p>
+
+    </footer>
 
     @yield('scripts')
 </body>

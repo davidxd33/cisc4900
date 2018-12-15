@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::simplePaginate(8);
+        $posts = Post::simplePaginate(4);
 
         return view('post.index', compact('posts'));
     }
@@ -56,7 +56,6 @@ class PostController extends Controller
         $post->save();
 
         return redirect('recipes/' . $post->id);
-
     }
 
     /**

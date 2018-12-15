@@ -8,6 +8,33 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+header {
+	background: url(http://school-project.localhost:8000/img/header.jpg);
+	height: 670px;
+	padding: 20px;
+
+	.header-content {
+		display: block;
+		margin: 0 auto;
+
+		.info {
+			margin-top: 20px;
+			text-align: center;
+			font-size: 28px;
+			color: white;
+   			text-shadow: 2px 2px 2px black;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.jumbotron {
+	border-bottom: 5px solid #ccc;
+}
+
 .btn-simple {
 	border: 1px solid black;
 	color: black;
@@ -18,19 +45,22 @@
 	}
 }
 
+footer {
+	text-align: center;
+    height: 54px;
+    background: #eee;
+    border-top: 5px solid #ccc;
+    padding: 10px;
+}
+
 .navbar-theme {
 	margin-bottom: 50px;
 
-	#logo {
-		img {
-			width: 200px;
-		}
-	}
-
 	.navbar-nav > li > a:not(.btn) {
-		color: #333;
+		color: #fff;
 		margin: 0px 5px;
-		border-bottom: 3px solid #222;
+		font-weight: bold;
+		text-shadow: 2px 2px 2px black;
 	}
 }
 
@@ -53,11 +83,35 @@
 }
 
 body {
-	background: url('/img/folk-pattern.png');
+
 }
 
 .content {
 	background: #fff;
 	padding: 30px;
 	border: 5px solid #ccc;
+	margin-top: 50px;
+}
+
+.card {
+	border-bottom: 5px solid rgba(0, 0, 0, 0.65);
+	border-radius: 0;
+	border-color: #ccc;
+	margin-bottom: 20px;
+
+	.card-title {
+		padding: 10px 20px;
+    	background: #ccc;
+
+    	a {
+    		color: #222;
+    	}
+	}
+
+	.card-body {
+
+		iframe {
+			width: 400px;
+		}
+	}
 }

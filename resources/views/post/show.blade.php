@@ -29,7 +29,7 @@
 	<div class="row">
 		<div class="col-md-4">
 			<h2 class="heading-1">{{ $post->post_title }}</h2>
-			<p class="info">A recipe created by {{ $post->user->name }} <br> Enjoy this creation as a {{ $post->category }} entree.</p>
+			<p class="info">A recipe created by {{ $post->user->name }} {{ $post->created_at->diffForHumans() }} <br> Enjoy this creation as a {{ $post->category }} entree.</p>
 		</div>
 		<div class="col-md-8">
 			<span id="video_link">{{ $post->video_url }}</span>
